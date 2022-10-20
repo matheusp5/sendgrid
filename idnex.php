@@ -1,6 +1,7 @@
 <?php
 require 'vendor/autoload.php';
 
+// SENDGRID API
 $email = new \SendGrid\Mail\Mail();
 $email->setFrom("contato@mxtheuz.com.br", "Mxtheuz");
 $email->setSubject("Sending with SendGrid is Fun");
