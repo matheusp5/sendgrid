@@ -10,7 +10,7 @@ $email->addContent(
     "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
 );
 // YOUR_SENDGRID_APIKEY
-$sendgrid = new \SendGrid("");
+$sendgrid = new \SendGrid("YOUR_SENDGRID_API_KEY");
 try {
     $response = $sendgrid->send($email);
     print $response->statusCode() . "\n";
